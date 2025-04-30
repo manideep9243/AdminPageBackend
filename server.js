@@ -25,7 +25,7 @@ app.use(express.json());
 app.use(cors());
 
 // MongoDB Connection
-const uri = process.env.MONGO_URI || "mongodb+srv://gniresults:gni1234@cluster0.iqgr5ty.mongodb.net/Results?retryWrites=true&w=majority&appName=Cluster0";
+const uri = process.env.MONGO_URI ;
 const client = new MongoClient(uri);
 const dbName = "Results";
 const collectionName = "StudentResults";
